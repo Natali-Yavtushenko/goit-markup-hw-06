@@ -311,6 +311,14 @@ button {
   color: #404bbf;
 }
 
+.mobil-box-contact {
+  margin-bottom: 48px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 24px;
+}
 .mobil-contacts-item {
   margin-bottom: 24px;
 }
@@ -336,6 +344,15 @@ button {
   margin-bottom: 40px;
 }
 
+.mobil-soc-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 40px;
+  width: 280px;
+}
+
 .mobil-soc-item {
   width: 40px;
   height: 40px;
@@ -350,6 +367,7 @@ button {
   background-color: #4d5ae5;
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #f4f4fd;
 }
 
 @media screen and (min-width: 768px) {
