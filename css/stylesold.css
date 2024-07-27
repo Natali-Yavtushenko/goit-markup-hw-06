@@ -15,9 +15,7 @@
   margin-right: auto;
 }
 
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) .hero-title {
+.hero-title {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
