@@ -53,19 +53,19 @@ button {
 .container {
   max-width: 320px;
   padding: 0 16px;
-
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 768px;
   }
 }
 
 @media screen and (min-width: 1158px) {
   .container {
-    max-width: 1158px;
+    width: 1158px;
     padding: 0 15px;
   }
 }
@@ -407,14 +407,14 @@ button {
 }
 
 .hero-title {
-  font: 700 36px / 1.11111 "Roboto", sans-serif;
+  font: 700 36px / 1.11 "Roboto", sans-serif;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
   max-width: 216px;
   margin: 0 auto;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 }
 
 .hero-btn {
@@ -437,4 +437,203 @@ button {
   height: 56px;
   color: #fff;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-color: #2e2f42;
+    padding: 112px 0;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/img10tab_1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    max-width: 496px;
+    margin: 0 auto;
+    margin-bottom: 36px;
+  }
+  .hero-btn {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .hero-btn:hover,
+  .hero-btn:focus {
+    background-color: #404bbf;
+  }
+}
+
+@media (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/img10tab_2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .hero {
+    background-color: #2e2f42;
+    padding: 188px 0;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/img10_1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-title {
+    margin: 0 auto;
+    margin-bottom: 48px;
+  }
+  .hero-btn {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/img10_2x.jpg);
+  }
+}
+
+/*MISSION*/
+
+.section {
+  margin: 96px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.mission {
+  text-align: center;
+  text-decoration: capitalize;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+}
+
+.massion-list {
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mission-item {
+  width: 288px;
+  height: 120px;
+  margin-bottom: 72px;
+}
+
+.container-icon {
+  display: none;
+}
+
+.mission-subtitle {
+  font: 700 36px / 1.11 "Roboto", sans-serif;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  text-align: center;
+  margin: 0 auto 8px auto;
+}
+
+.mission-item-text {
+  font: 500 16px / 1.5 "Roboto", sans-serif;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    max-width: 736px;
+    height: 312px;
+  }
+
+  .mission-container {
+    display: flex;
+    align-content: center;
+    justify-items: center;
+  }
+  .massion-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .mission-item {
+    width: 356px;
+    height: 120px;
+    max-width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .container {
+    max-width: 1128px;
+  }
+  .massion-list {
+    display: flex;
+    gap: 24px;
+  }
+  .mission-item {
+    max-width: calc((100% - 3 * 24px) / 4);
+    width: 264px;
+    height: 224px;
+  }
+  .container-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4fd;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+  }
+  .mission-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+  .mission-item-text {
+    font-weight: 400;
+  }
 }
