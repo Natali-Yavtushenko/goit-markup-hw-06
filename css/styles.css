@@ -594,9 +594,7 @@ button {
     padding-top: 120px;
     padding-bottom: 120px;
   }
-  .container {
-    max-width: 1128px;
-  }
+
   .massion-list {
     display: flex;
     gap: 24px;
@@ -723,7 +721,6 @@ button {
 
 @media screen and (min-width: 1158px) {
   .section {
-    width: 1440px;
     margin: 120px 0;
     display: flex;
     align-items: center;
