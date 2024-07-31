@@ -576,8 +576,8 @@ button {
 
 @media screen and (min-width: 768px) {
   .section {
-    max-width: 736px;
-    height: 312px;
+    width: 736px;
+    
   }
 
   .mission-container {
@@ -636,4 +636,114 @@ button {
   .mission-item-text {
     font-weight: 400;
   }
+}
+
+.our-team {
+  background-color: #f4f4fd;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.team {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--navy-blue);
+  margin-bottom: 72px;
+}
+
+.team-list {
+  display: flex;
+  gap: 72px;
+  flex-wrap: wrap;
+}
+
+.team-item {
+  background-color: #ffffff;
+  border-radius: 0 0 4px 4px;
+  width: 100%
+  height: 428px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.box {
+  padding: 32px 0;
+}
+
+.team-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.team-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #434455;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.team-icon-social {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.icon-social-item {
+  width: 40px;
+  height: 40px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  fill: #fff;
+}
+
+@media screen and (min-width: 768px) {
+   .section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+  .team-item {
+    width: calc((100% - 24px) / 2);
+    gap: 24px 64px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+
+ .section {
+  width: 1440px;
+  margin: 120px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+   .team-item {
+    width: calc((100% - 3 * 24px) / 4);
+    gap: 24px;
+ 
+}
 }
