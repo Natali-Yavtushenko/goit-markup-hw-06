@@ -51,7 +51,7 @@ button {
 }
 
 .container {
-  max-width: 320px;
+  width: 320px;
   padding: 0 16px;
   margin-left: auto;
   margin-right: auto;
@@ -390,7 +390,6 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 320px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -571,10 +570,6 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .section {
-    width: 736px;
-  }
-
   .mission-container {
     display: flex;
     align-content: center;
