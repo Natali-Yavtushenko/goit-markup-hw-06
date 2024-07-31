@@ -719,7 +719,7 @@ button {
 
   .team-item {
     width: calc((100% - 24px) / 2);
-    gap: 24px 64px;
+    gap: 64px 24px;
   }
 }
 
