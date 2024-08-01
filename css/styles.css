@@ -936,6 +936,7 @@ button {
   justify-content: center;
   flex-direction: column;
   flex-wrap: nowrap;
+  gap: 24px;
 }
 
 .modal-subscribe {
@@ -951,7 +952,6 @@ button {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   opacity: 0.3;
   padding-left: 16px;
-  margin-bottom: 16px;
 }
 
 .modal-subscribe::placeholder {
@@ -1003,4 +1003,35 @@ button {
 .icon-send {
   fill: #fff;
   margin-left: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-text {
+    max-width: 264px;
+    margin-bottom: 72px;
+  }
+  .footer-box {
+    align-items: flex-start;
+  }
+  .footer-container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 24px;
+  }
+  .footer-soc {
+    align-self: flex-start;
+  }
+  .footer-text-soc {
+    text-align: start;
+  }
+  .footer-form {
+    flex-direction: row;
+  }
+  .subscribe-text {
+    text-align: start;
+  }
+
+  .footer-subscribe {
+    margin: 0;
+  }
 }
