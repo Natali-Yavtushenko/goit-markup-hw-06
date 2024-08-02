@@ -1049,6 +1049,7 @@ button {
   }
   .footer-container {
     align-items: baseline;
+    flex-wrap: nowrap;
   }
   .footer-box {
     margin-right: 120px;
