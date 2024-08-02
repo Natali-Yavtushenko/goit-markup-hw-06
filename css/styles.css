@@ -1105,16 +1105,16 @@ button {
 }
 
 .model-close-btn {
-  position: absolute;
-  top: 24px;
-  right: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: auto;
   fill: var(--cornflower);
   stroke-width: 1px;
+  position: absolute;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  top: 24px;
+  right: 24px;
   border-radius: 50%;
   width: 24px;
   height: 24px;
@@ -1159,7 +1159,7 @@ button {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
-  line-height: 117%;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   margin-bottom: 4px;
@@ -1203,7 +1203,7 @@ button {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
-  line-height: 117%;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
 }
@@ -1254,7 +1254,6 @@ button {
 .modal-terms-check {
   display: flex;
   align-items: center;
-  color: #8e8f99;
   gap: 8px;
   width: 256px;
 }
@@ -1277,8 +1276,7 @@ button {
 }
 
 .modal-terms-check .span-text {
-  font: 400 12px / 1.16667 "Roboto", sans-serif;
-  letter-spacing: 0.04em;
+  font: 400 12px / 1.17 "Roboto", sans-serif;
   color: #8e8f99;
 }
 .modal-terms:checked + .modal-terms-check > .span-check {
@@ -1321,4 +1319,29 @@ button {
 .terms-btn:hover,
 .terms-btn:focus {
   background-color: #404bbf;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    border-radius: 4px;
+    width: 408px;
+    min-height: 584px;
+    padding: 72px 24px 24px 24px;
+  }
+  .modal-title {
+    max-width: 360px;
+    font-size: 16px;
+  }
+  .form-field {
+    width: 360px;
+  }
+  .modal-terms-check {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 360px;
+  }
+  .modal-terms-check .span-check {
+    letter-spacing: 0.04em;
+  }
 }
