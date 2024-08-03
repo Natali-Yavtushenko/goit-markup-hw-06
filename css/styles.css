@@ -114,7 +114,7 @@ button {
   color: #4d5ae5;
 }
 .header-logo {
-  padding: 16 0;
+  padding: 16px 0;
   display: block;
 }
 .header-logo-studio {
@@ -157,7 +157,7 @@ button {
     position: relative;
   }
   .header-logo {
-    padding: 24 0;
+    padding: 24px 0;
     margin-right: 120px;
   }
   .header-menu-link {
@@ -167,7 +167,7 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    padding: 12px 0;
+    padding: 24px 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .header-menu-link.current {
@@ -299,13 +299,12 @@ button {
   height: 100%;
 }
 
-.mobil-menu-list {
-  margin-left: 16px;
-  width: 151px;
-}
-
 .mobil-menu-item {
   margin-bottom: 40px;
+}
+
+.mobil-menu-link {
+  margin: 0;
 }
 
 .mobil-menu-link {
@@ -320,14 +319,10 @@ button {
   color: #404bbf;
 }
 
-.mobil-box-contact {
+.mobil-contacts {
   margin-bottom: 48px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 24px;
 }
+
 .mobil-contacts-item {
   margin-bottom: 24px;
 }
@@ -335,6 +330,7 @@ button {
   font: 500 20px / 1.2 "Roboto", sans-serif;
   letter-spacing: 0.02em;
   color: #434455;
+  margin: 0;
 }
 
 .mobil-contacts-tel {
@@ -395,15 +391,18 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/img10_1x.jpg);
+    url(../images/img10mob_1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin-left: auto;
   margin-right: auto;
+  max-width: 320px;
 }
 
-@media (min-resolution: 192dpi) {
+@media screen and (-webkit-min-devace-pixel-ratio),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
   .hero {
     background-image: linear-gradient(
         to bottom,
@@ -464,6 +463,20 @@ button {
     margin-left: auto;
     margin-right: auto;
   }
+
+  @media screen and (-webkit-min-devace-pixel-ratio),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .hero {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/img10TAB_2x.jpg);
+    }
+  }
+
   .hero-title {
     font-size: 56px;
     line-height: 1.07;
@@ -479,17 +492,6 @@ button {
   .hero-btn:hover,
   .hero-btn:focus {
     background-color: #404bbf;
-  }
-}
-
-@media (min-resolution: 192dpi) {
-  .hero {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/img10tab_2x.jpg);
   }
 }
 
@@ -509,6 +511,19 @@ button {
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @media screen and (-webkit-min-devace-pixel-ratio),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .hero {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/img10_2x.jpg);
+    }
   }
 
   .hero-title {
@@ -586,7 +601,7 @@ button {
   }
   .massion-list {
     display: flex;
-    gap: 24px;
+    gap: 72px 24px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
@@ -595,6 +610,9 @@ button {
     width: 356px;
     height: 120px;
     max-width: calc((100% - 24px) / 2);
+  }
+  .mission-subtitle {
+    text-align: left;
   }
 }
 
@@ -655,6 +673,7 @@ button {
   align-items: center;
   gap: 72px 0;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .team-item {
@@ -864,7 +883,7 @@ button {
   justify-content: flex-start;
   flex-wrap: nowrap;
   flex-direction: column;
-  margin-bottom: 16px;
+  margin-bottom: 72px;
 }
 
 .footer-text {
@@ -874,11 +893,11 @@ button {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 288px;
-  margin-bottom: 72px;
 }
 
 .footer-soc {
   width: 208px;
+  margin-bottom: 72px;
 }
 
 .footer-text-soc {
@@ -896,7 +915,6 @@ button {
   display: flex;
   align-items: center;
   gap: 16px;
-  margin-bottom: 72px;
 }
 
 .footer-item {
@@ -1019,20 +1037,25 @@ button {
   }
   .footer-box {
     align-items: flex-start;
+    margin-bottom: 0;
   }
   .footer-container {
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 24px;
+    gap: 72px 24px;
   }
   .footer-soc {
     align-self: flex-start;
+    margin-bottom: 0;
   }
   .footer-text-soc {
     text-align: start;
   }
   .footer-form {
     flex-direction: row;
+  }
+  .modal-subscribe {
+    width: 256px;
   }
   .subscribe-text {
     text-align: start;
@@ -1050,6 +1073,7 @@ button {
   .footer-container {
     align-items: baseline;
     flex-wrap: nowrap;
+    gap: 0;
   }
   .footer-box {
     margin-right: 120px;
@@ -1058,7 +1082,7 @@ button {
     max-width: 264px;
   }
   .container-soc {
-    margin-bottom: 0;
+    margin-bottom: auto;
   }
   .footer-subscribe {
     margin-left: auto;
@@ -1265,15 +1289,12 @@ button {
   justify-content: center;
   align-items: center;
   fill: transparent;
-  margin-right: 8px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.check {
   width: 16px;
   height: 16px;
+  flex-shrink: 0;
 }
 
 .modal-terms-check .span-text {
